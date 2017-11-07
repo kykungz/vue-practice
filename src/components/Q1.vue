@@ -1,9 +1,9 @@
 <template lang="html">
   <div>
     <h1>โจทย์ข้อ 1</h1>
-      R:<input v-model='r' @change="changeBG({r,g,b})" type="number"><br>
-      G:<input v-model='g' @change="changeBG({r,g,b})" type="number"><br>
-      B:<input v-model='b' @change="changeBG({r,g,b})" type="number"><br>
+      R:<input v-model='r' @input="changeBG({r,g,b})" type="number"><br>
+      G:<input v-model='g' @input="changeBG({r,g,b})" type="number"><br>
+      B:<input v-model='b' @input="changeBG({r,g,b})" type="number"><br>
       {{ bg }}
       <div class="colorBox" :style='`backgroundColor: ${bg}`'></div>
   </div>
